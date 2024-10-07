@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px; /* Kích thước tối đa của trang */
+    margin: 0 auto; /* Căn giữa trang */
+    padding: 0 20px; /* Khoảng cách bên trái và bên phải */
+}
+
+header {
+    background-color: #f4f4f4;
+    color: #0b0808;
+    padding: 20px;
+    text-align: center; /* Căn giữa nội dung trong header */
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.brand-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Căn giữa các phần tử con */
+    gap: 20px;
+}
+
+.brand {
+    text-align: center;
+    width: 200px; /* Kích thước cố định cho các thương hiệu */
+}
+.search-bar {
+    text-align: right;
+    padding: 10px;
+}
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+}
+.brand img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.brand p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #0b0808;
+}
+
+
+footer {
+    background-color: #f4f4f4;
+    color: #0b0808;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Đặt menu ngang */
+nav ul.menu {
+    list-style-type: none; /* Loại bỏ dấu đầu dòng */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Căn các phần tử nằm ngang */
+    justify-content: center; /* Căn giữa các mục */
+}
+
+nav ul.menu li {
+    margin-right: 20px; /* Khoảng cách giữa các mục */
+}
+
+nav ul.menu li:last-child {
+    margin-right: 0; /* Loại bỏ khoảng cách sau mục cuối */
+}
+
+nav ul.menu li a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #0b0808; /* Màu chữ */
+    font-weight: bold; /* Chữ đậm */
+}
+
+nav ul.menu li a:hover {
+    color: #0b0808; /* Đổi màu khi hover */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #0b0808;
+}
+
+footer p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Căn giữa các icon */
+    gap: 20px; /* Khoảng cách giữa các icon */
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links li img {
+    width: 40px; /* Kích thước icon */
+    height: auto;
+    transition: transform 0.3s ease; /* Hiệu ứng phóng to khi hover */
+}
+
+.social-links li img:hover {
+    transform: scale(1.2); /* Phóng to icon khi hover */
+}
+
