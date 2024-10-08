@@ -100,6 +100,27 @@
                 <li><a href="https://tiktok.com" target="_blank"><img src="tiktok-icon.png" alt="TikTok"></a></li>
             </ul>
         </footer>
-            
+            <script>
+function filterProducts() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const products = document.getElementsByClassName('brand');
+    let hasResult = false;
+
+    for (let i = 0; i < products.length; i++) {
+        const productName = products[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+        if (productName.includes(input)) {
+            products[i].style.display = 'block';
+            hasResult = true;  // Có kết quả trùng với từ khóa
+        } else {
+            products[i].style.display = 'none';
+        }
+    }
+
+    // Nếu không có kết quả nào, điều hướng về trang chủ
+    if (!hasResult) {
+        window.location.href = 'index.html';
+    }
+}
+</script>
     </body>
     </html>
